@@ -32,7 +32,7 @@ cacheSolve <- function(x, ...) {
   inve <- x$getinverse()
   if (!is.null(inve)) {
     message("getting cached data")
-    return(i)
+    return(inve)
   }
   dmax <- x$get()
   inve <- solve(dmax, ...)
